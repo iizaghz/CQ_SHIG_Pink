@@ -106,6 +106,10 @@ namespace PraktikumADO
                 Koneksi();
                 conn.Open();
 
+                string query = "UPDATE Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001'";
+
+               
+
                 conn.Close();
             }
             catch (Exception ex)
