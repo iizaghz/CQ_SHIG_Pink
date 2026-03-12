@@ -66,6 +66,7 @@ namespace PraktikumADO
 
                 int jumlah = (int)cmd.ExecuteScalar();
 
+                txtHasil.Text = jumlah.ToString();
 
                 conn.Close();
             }
