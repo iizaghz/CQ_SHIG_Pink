@@ -68,6 +68,8 @@ namespace PraktikumADO
 
                 txtHasil.Text = jumlah.ToString();
 
+                MessageBox.Show("Hitung Mhs berhasil");
+
                 conn.Close();
             }
             catch (Exception ex)
@@ -90,6 +92,8 @@ namespace PraktikumADO
                 int jumlah = (int)cmd.ExecuteScalar();
 
                 txtHasil.Text = jumlah.ToString();
+
+                MessageBox.Show("Hitung MK berhasil");
 
                 conn.Close();
             }
@@ -136,6 +140,8 @@ namespace PraktikumADO
                 int jumlah = (int)cmd.ExecuteScalar();
 
                 txtHasil.Text = jumlah.ToString();
+
+                MessageBox.Show("Hitung Dosen berhasil");
 
                 conn.Close();
             }

@@ -34,7 +34,6 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHasil = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnHitungDosen = new System.Windows.Forms.Button();
             this.btnUpdateMK = new System.Windows.Forms.Button();
             this.btnInsertProdi = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
             this.btnConnect.TabIndex = 0;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnHitungMhs
             // 
@@ -82,7 +82,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(171, 119);
+            this.label1.Location = new System.Drawing.Point(243, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 16);
             this.label1.TabIndex = 4;
@@ -90,25 +90,16 @@
             // 
             // txtHasil
             // 
-            this.txtHasil.Location = new System.Drawing.Point(532, 85);
+            this.txtHasil.Location = new System.Drawing.Point(337, 104);
             this.txtHasil.Name = "txtHasil";
-            this.txtHasil.Size = new System.Drawing.Size(100, 22);
+            this.txtHasil.Size = new System.Drawing.Size(279, 22);
             this.txtHasil.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(626, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnHitungDosen
             // 
-            this.btnHitungDosen.Location = new System.Drawing.Point(390, 168);
+            this.btnHitungDosen.Location = new System.Drawing.Point(532, 234);
             this.btnHitungDosen.Name = "btnHitungDosen";
-            this.btnHitungDosen.Size = new System.Drawing.Size(145, 37);
+            this.btnHitungDosen.Size = new System.Drawing.Size(145, 36);
             this.btnHitungDosen.TabIndex = 7;
             this.btnHitungDosen.Text = "Hitung Dosen";
             this.btnHitungDosen.UseVisualStyleBackColor = true;
@@ -116,7 +107,7 @@
             // 
             // btnUpdateMK
             // 
-            this.btnUpdateMK.Location = new System.Drawing.Point(159, 181);
+            this.btnUpdateMK.Location = new System.Drawing.Point(353, 234);
             this.btnUpdateMK.Name = "btnUpdateMK";
             this.btnUpdateMK.Size = new System.Drawing.Size(122, 36);
             this.btnUpdateMK.TabIndex = 8;
@@ -126,9 +117,9 @@
             // 
             // btnInsertProdi
             // 
-            this.btnInsertProdi.Location = new System.Drawing.Point(67, 134);
+            this.btnInsertProdi.Location = new System.Drawing.Point(147, 234);
             this.btnInsertProdi.Name = "btnInsertProdi";
-            this.btnInsertProdi.Size = new System.Drawing.Size(98, 29);
+            this.btnInsertProdi.Size = new System.Drawing.Size(134, 36);
             this.btnInsertProdi.TabIndex = 9;
             this.btnInsertProdi.Text = "Insert Prodi";
             this.btnInsertProdi.UseVisualStyleBackColor = true;
@@ -142,7 +133,6 @@
             this.Controls.Add(this.btnInsertProdi);
             this.Controls.Add(this.btnUpdateMK);
             this.Controls.Add(this.btnHitungDosen);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnUpdate);
@@ -165,7 +155,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHasil;
         private System.Windows.Forms.Button btnHitungMhs;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnHitungDosen;
         private System.Windows.Forms.Button btnUpdateMK;
         private System.Windows.Forms.Button btnInsertProdi;
