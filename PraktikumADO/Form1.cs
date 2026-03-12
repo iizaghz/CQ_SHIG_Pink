@@ -38,7 +38,18 @@ namespace PraktikumADO
         // Event tombol connect
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnHitungMhs_Click(object sender, EventArgs e)
