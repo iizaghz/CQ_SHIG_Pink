@@ -26,7 +26,7 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Source=DESKTOP-RM2AOFI\\APRILIYA;Initial Catalog=DBAkademikADO;Integrated Security=True"
+                "Data Source=IZAYAAA\\IZA;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
         }
 
@@ -38,19 +38,22 @@ namespace PraktikumADO
         // Event tombol connect
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Koneksi();
-                conn.Open();
+            
+        }
 
-                MessageBox.Show("Koneksi ke database berhasil");
+        private void btnHitungMhs_Click(object sender, EventArgs e)
+        {
+            
+        }
 
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+        private void btnHitungMK_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
